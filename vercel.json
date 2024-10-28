@@ -1,44 +1,12 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "nuxt.config.js",
-        "use": "@nuxtjs/vercel-builder",
-        "config": {
-          "serverFiles": [
-            ".env"
-          ],
-          "generateStaticRoutes": true,
-          "internalServer": true
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/_nuxt/.+",
-        "headers": {
-          "Cache-Control": "public, max-age=31557600"
-        }
-      },
-      {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ],
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "build": {
-      "env": {
-        "NODE_ENV": "production"
-      }
-    },
+    "framework": "nuxtjs",
+    "buildCommand": "npm run generate",
+    "outputDirectory": ".output/public",
+    "cleanUrls": true,
     "headers": [
       {
-        "source": "/fonts/(.*)",
+        "source": "/_nuxt/(.*)",
         "headers": [
           {
             "key": "Cache-Control",
@@ -54,15 +22,22 @@
             "value": "public, max-age=31536000, immutable"
           }
         ]
-      },
-      {
-        "source": "/_nuxt/(.*)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
       }
-    ]
+    ],
+    "rewrites": [
+      {
+        "source": "/sw.js",
+        "destination": "/_nuxt/static/sw.js"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/blog",
+        "destination": "/notes",
+        "permanent": true
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
   }

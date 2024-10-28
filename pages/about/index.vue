@@ -40,7 +40,8 @@
       <div class="container">
         <div class="promise">
           <p class="caption">How and Where I work(ed)</p>
-          <h2 class="title heading-1 text-primary-dark">I make and verify hypothesis by creating and breaking solutions until reaching users’ delight and company’s vision.</h2>
+          <h2 class="title heading-1 text-primary-dark">"I Do Everthing With Passion To Bring Life &
+            Designing cool UI screens is my super Power Don't tell to anyone it's a secret"</h2>
           <div class="desc emphasis text-tertiary-dark">
             <p>Started from <span class="drake">the bottom </span>the original problem(s) and make sure we try to tackle the correct one(s) is essential to make sure we provide efficient solutions to users and businesses.</p>
             <p>Also, I always try to find a great balance between following the choosen methodology and keeping velocity and efficiency through the entire journey.</p>
@@ -79,26 +80,24 @@
       <div class="container">
         <div class="personal-photo">
           <picture>
-            <source type="image/webp" srcset="@/static/images/yannglt.webp">
-            <source type="image/jpeg" srcset="@/static/images/yannglt.jpg">
-            <img src="@/static/images/yannglt.jpg" alt="">
+            <!-- <source type="image/webp" srcset="@/static/images/yannglt.webp"> -->
+            <source type="image/jpeg" srcset="@/static/images/praveen.jpeg">
+            <img src="@/static/images/praveen.jpeg" alt="">
           </picture>
-          <p class="author body text-tertiary-light">Photography taken by <SuperLink href="https://twitter.com/sabrinandjh" target="_blank" variant="body light">Sabrina Nedjah</SuperLink></p>
         </div>
         <div class="personal-content">
           <p class="caption text-tertiary-light">About me as a human</p>
           <h2 class="quote heading-2 text-primary-secondary-light">“I believe in the process but even more in the connections we  build and strenghten along the way between companies, teams and end-users, all as humans.”</h2>
           <div class="emphasis">
-            <p>My name is Praveen Manchi. I’m a French designer living in Paris, France. My main area of focus today is on systems, digital products and interfaces. DMs are opened!</p>
-            <SuperLink href="https://twitter.com/yannglt" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Shoot me a DM on Twitter</SuperLink>
-            <p>In my spare time I still spend a lot of time on screens, but more as a front-end engineer. I love learning new things, especially with Vue, Nuxt and GSAP. More recently I’m learning the craft of icon design (yup, the ones you saw earlier are born on my computer). I like the idea of crafting myself every pixel of my creations, both in design and code, like this portfolio.</p>
+            <p>My name is Praveen Manchi. I am a User Interface and User Experience designer.</p>
+            <p>I currently work at Deloitte, where I am part of an amazing team that is designing thoughtful experiences to help designers, product managers, and engineers collaborate better together. In my spare time, I am learning Unreal Engine to create virtual and augmented reality experiences for the future. I am passionate about building and designing delightful experiences that consider the needs of both the business and the end user. My goal is to make customers and users satisfied when they use our products and services online.</p>
             <SuperLink href="https://github.com/yannglt/yannglt.com" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Read the code behind this website</SuperLink>
-            <p>When my hands are not on my mechanical keyboard, I enjoy taking care of my plants, cook/ try some italian recipes with my girlfriend and building LEGO sets.</p>
-            <p>To relax, I dive into work of others designers and developers, thanks to Standards Manual, Increment and Offscreen.</p>
+            <!-- <p>When my hands are not on my mechanical keyboard, I enjoy taking care of my plants, cook/ try some italian recipes with my girlfriend and building LEGO sets.</p>
+            <p>To relax, I dive into work of others designers and developers, thanks to Standards Manual, Increment and Offscreen.</p> -->
             <!-- <p>With this COVID—19/20/21 crisis + global lockdown, I spent a lot of time improving my workspace and discovered myself quite a passion for that (how original). Interested in learning more about my setup ?</p>
             <SuperLink href="" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Discover what it looks like</SuperLink> -->
-            <p>I’m also a huge fan of Hip-Hop culture and music. Even if I listen to a lot of US / UK rappers, french rap is deeply anchored in my head + easier to understand as a french person of course. I created playlists for each of my mood, feel free to give it a try!</p>
-            <SuperLink href="https://open.spotify.com/playlist/1WjBzk8cP7bhZ6QoForRWa" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Listen to my current playlist</SuperLink>
+            <!-- <p>I’m also a huge fan of Hip-Hop culture and music. Even if I listen to a lot of US / UK rappers, french rap is deeply anchored in my head + easier to understand as a french person of course. I created playlists for each of my mood, feel free to give it a try!</p>
+            <SuperLink href="https://open.spotify.com/playlist/1WjBzk8cP7bhZ6QoForRWa" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Listen to my current playlist</SuperLink> -->
           </div>
         </div>
         <!-- <div class="facts">
@@ -165,41 +164,32 @@
         experiences: [
           {
             id: 0,
-            company: 'Specify',
-            position: 'Product Designer',
-            desc: '<p>Specify is a Design Data Platform, helping teams unify their brand identity by collecting, storing, transforming and distributing design tokens and assets — automatically.</p>',
-            startDate: '09/06/2021',
-            endDate: 'Now',
+            company: 'Deloitte South Asia LLP',
+    position: 'Product Designer',
+    desc: '<p>As in-house Product Designer at CortexAI, collaborated within a dynamic team, leading a small team while also contributing individually. Worked on web and mobile platforms, spearheading UI for applications such as LLM, Generative AI, and in-house AI tools. Created UI from scratch, setting high-level standards and established design systems. Crafted interfaces for users to search, review, and purchase assets like prompts, code & algorithm and datasets, facilitating seamless deployment on cloud platforms such as AWS and Azure.</p>',
+    startDate: '07/01/2022',
+    endDate: 'Now',
             duration: '',
             link: 'a-new-adventure-at-specify',
             linkTitle: 'Read more about my new adventure',
           },
           {
             id: 1,
-            company: 'Source',
-            position: 'Product Designer',
-            desc: '<p>Source exists to help its clients and partners to fight against preconceptions, thanks to a rational and user-centered approach.</p><p>I worked closely with multiple industry-related startups and companies, by doing user research, workshops around brand vision and strategy, setting up experience maps and user journeys, to building high-fidelity prototypes and developed solutions.</p><p>6-month internship, 1 year apprenticeship and full-time employee from January 2019 to August 2021.</p>',
-            startDate: '07/02/2018',
-            endDate: '08/27/2021',
-            duration: '',
+    company: 'Tata Elxsi',
+    position: 'Senior UI Designer',
+    desc: '<p>As a UX/UI Designer, drove the design and development of UI, including web, mobile, HCI and HMI with exceptional quality across projects for esteemed clients in renewable energy, automobile, and aviation. Worked on two major OTT platforms, leveraging cutting-edge UI enhancements rooted in extensive UX research. Crafted Futuristic User Interfaces (FUI) using Blender and Unreal Engine, pushing the boundaries of design innovation.</p>',
+    startDate: '12/01/2020',
+    endDate: '06/30/2022',
+    duration: '',
           },
           {
             id: 2,
-            company: 'Freelance',
-            position: 'Product Designer',
-            desc: '<p>I am providing value to early and mid-stage companies through product & brand design services and design system expertise.</p>',
-            startDate: '01/01/2018',
-            endDate: 'Now',
-            duration: '',
-          },
-          {
-            id: 3,
-            company: 'Synerg\' hetic',
-            position: 'Design Consultant',
-            desc: '<p>I implemented design methodologies to the global positioning of the Junior Company while working closely with startups around minimum viable products and ideation workshops.</p>',
-            startDate: '05/01/2017',
-            endDate: '11/30/2018',
-            duration: '',
+    company: 'WAFU Technologies Private Limited',
+    position: 'UX/UI Designer',
+    desc: '<p>Assisted in the design and development of mobile and web products, contributing to user interface design, usability testing, and design iteration processes. Collaborated with senior designers to translate concepts into wireframes, prototypes, and final designs.</p>',
+    startDate: '05/01/2018',
+    endDate: '12/31/2020',
+    duration: '',
           },
         ],
         columns: [

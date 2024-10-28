@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="manifesto">
+    <!-- <section class="manifesto">
       <div class="container">
         <div class="atlas-bg"></div>
         <div class="subwrapper">
@@ -118,22 +118,22 @@
             <div class="content body-long">
               <p>Pallet Town and New-York. Spider-Man's dark backgrounds and Pikachu’s yellow flash.  Movement, people and energy. All my life, I’ve been drawing inspiration from cities and electrical networks. Today, I deeply believe that great work stems from a solid plan, a clean architecture and efficient teams.</p>
               <p></p>
-              <!-- <p>This personal space is a reflection of who I am and where I’m trying to head as a Product Designer. It comes from years of wondering and wandering. I’m happy I waited as much as I did though, it helped me grow and build the set of principles I now want to stand atop.</p>
-              <p>I hope you like what you find! I’m always happy to talk about design, its bridges with code and/or exchange ideas on why and how things should be done.</p> -->
-              <!-- <SuperLink href="https://twitter.com/yannglt" target="_blank" variant="body light" icon="#arrow-forward-20">Shoot me a DM on Twitter</SuperLink>
+              <p>This personal space is a reflection of who I am and where I’m trying to head as a Product Designer. It comes from years of wondering and wandering. I’m happy I waited as much as I did though, it helped me grow and build the set of principles I now want to stand atop.</p>
+              <p>I hope you like what you find! I’m always happy to talk about design, its bridges with code and/or exchange ideas on why and how things should be done.</p>
+              <SuperLink href="https://twitter.com/yannglt" target="_blank" variant="body light" icon="#arrow-forward-20">Shoot me a DM on Twitter</SuperLink>
               <p>Prefer the old fashion way ? Copy my email address (no mailto):</p>
-              <SuperLink @click.native="copyEmail" variant="body light" icon="#copy-20">Copy my email address</SuperLink> -->
+              <SuperLink @click.native="copyEmail" variant="body light" icon="#copy-20">Copy my email address</SuperLink>
             </div>
           </div>
         </div>
-        <!-- <div class="manifesto-process">
+        <div class="manifesto-process">
           <div class="manifesto-process-content">
             <p class="process-title">This vision is powered by a process improved over the years with talented people and projects</p>
             <a href="/process" class="process-cta">Discover the process<svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/sprite.svg#arrow-forward-20"></use></svg></a>
           </div>
-        </div> -->
+        </div>
       </div>
-    </section>
+    </section> -->
 
     
     <section class="human">
@@ -144,9 +144,9 @@
           <SuperButton class="human-intro-link" href="/about" variant="tertiary thunderstorm" icon="#arrow-forward-20">Read more about me</SuperButton>
           <!-- <div class="human-intro-logo"></div> -->
         </div>
-        <div class="facts">
+        <!-- <div class="facts">
           <Fact v-for="fact in facts" :key="fact.id" variant="dark" :sub="fact.sub" :title="fact.title" :desc="fact.desc"></Fact>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -178,34 +178,34 @@
 
   export default {
 
-    data() {
-      return {
-        facts: [
-          {
-            id: '0',
-            sub: 'Quick fact #1',
-            title: 'Started practicing visual design with  themes for jailbreaked iPhones at 11 years old',
-            desc: '<p>And it was a real mess at first, as I didn’t know anything about icons or interface design. But with time and practice, I felt in love with all the possibilities Cydia (more or less an AppStore for jailbreaked iPhones) offers for designers and developers as me.</p>'
-          },
-          {
-            id: '1',
-            sub: 'Quick fact #3',
-            title: 'Never stopped playing with LEGO',
-            desc: '<p>In fact, I continue to play while being in high-school, in university and then college, from City, Star Wars or Mars series to my current Architecture collection, these little bricks help me to stay away from the screen every once in a while.</p>'
-          },
-          {
-            id: '2',
-            sub: 'Quick fact #5',
-            title: 'Dad of 9 healthy plants',
-            desc: '<p>As a lot ot of humans around the globe during the 2020 pandemic + lockdown, I decided to improve my workspace and bring more life to my apartment.</p><p>With my loved one, Sabrina (<a href="https://twitter.com/sabrinandjh" target="_blank"  rel="noopener">go check her portfolio</a>), we chose plants from different places of the world and after running trials, we found out how to mix LEGOs and our green newcommers.</p>'
-          }
-        ],
-        showNavbar: true,
-        lastScrollPosition: 0,
-        email: 'hello@yannglt.com',
-        emailToast: null
-      }
-    },
+    // data() {
+    //   return {
+    //     facts: [
+    //       {
+    //         id: '0',
+    //         sub: 'Quick fact #1',
+    //         title: 'Started practicing visual design with  themes for jailbreaked iPhones at 11 years old',
+    //         desc: '<p>And it was a real mess at first, as I didn’t know anything about icons or interface design. But with time and practice, I felt in love with all the possibilities Cydia (more or less an AppStore for jailbreaked iPhones) offers for designers and developers as me.</p>'
+    //       },
+    //       {
+    //         id: '1',
+    //         sub: 'Quick fact #3',
+    //         title: 'Never stopped playing with LEGO',
+    //         desc: '<p>In fact, I continue to play while being in high-school, in university and then college, from City, Star Wars or Mars series to my current Architecture collection, these little bricks help me to stay away from the screen every once in a while.</p>'
+    //       },
+    //       {
+    //         id: '2',
+    //         sub: 'Quick fact #5',
+    //         title: 'Dad of 9 healthy plants',
+    //         desc: '<p>As a lot ot of humans around the globe during the 2020 pandemic + lockdown, I decided to improve my workspace and bring more life to my apartment.</p><p>With my loved one, Sabrina (<a href="https://twitter.com/sabrinandjh" target="_blank"  rel="noopener">go check her portfolio</a>), we chose plants from different places of the world and after running trials, we found out how to mix LEGOs and our green newcommers.</p>'
+    //       }
+    //     ],
+    //     showNavbar: true,
+    //     lastScrollPosition: 0,
+    //     email: 'hello@yannglt.com',
+    //     emailToast: null
+    //   }
+    // },
 
     head() {
       return {
@@ -224,17 +224,17 @@
           {
             hid: 'og:image',
             name: 'og:image',
-            content: 'https://yannglt.com/images/og-image.png',
+            content: 'https://ycsfwdainpwgmgsjqppv.supabase.co/storage/v1/object/public/OG-images/home-og.png',
           },
           {
             hid: 'twitter:image',
             name: 'twitter:image',
-            content: 'https://yannglt.com/images/og-image.png',
+            content: 'https://ycsfwdainpwgmgsjqppv.supabase.co/storage/v1/object/public/OG-images/home-og.png',
           },
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://yannglt.com/',
+            content: 'https://www.praveenmanchi.art/',
           },
         ]
       }
