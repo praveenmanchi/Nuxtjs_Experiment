@@ -1,0 +1,155 @@
+html
+  scroll-behavior: smooth
+  
+.note-page .note
+  // Inital spacing + navbar height
+  margin-top: calc(#{$space-xxl} + 96px)
+  margin-bottom: $space-xxxl
+
+  .container
+    @extend .gridSystem
+
+  .notes-back, .note-content, .note-end
+
+    +adapt($bkp-tablet)
+      grid-column: 1 / span 6
+
+    +adapt($bkp-desktop-sd)
+      grid-column: 2 / span 4
+
+    +adapt($bkp-desktop-hd)
+      grid-column: 4 / span 6
+
+  // .note-table-of-contents-wrapper
+    // margin-top: 84px
+    // grid-row: 1 / span 1
+    // grid-column: 10 / span 3
+    // min-height: calc(100% - 84px)
+
+  // .note-table-of-contents
+    // font-size: 14px
+    // line-height: 24px
+
+    // position: -webkit-sticky
+    // position: sticky
+    // top: 80px
+
+    li.h2
+      @extend .bold
+
+    li.h3
+      color: $oblivion-400
+      margin-top: 4px
+      margin-bottom: 4px
+
+      span
+        padding-right: 4px
+        font-family: "Fira Code"
+        font-weight: 500
+
+    li.h2:not(:first-child)
+      margin-top: 32px
+
+  .note-end
+
+    +adapt($bkp-tablet)
+      grid-column: 1 / span 6
+
+    +adapt($bkp-desktop-sd)
+      grid-column: 2 / span 4
+
+    +adapt($bkp-desktop-hd)
+      grid-column: 4 / span 6
+
+  .notes-back.dark
+    margin-bottom: $space-m
+    flex-direction: row-reverse
+    justify-content: flex-end
+
+    &:hover
+
+      .label
+        color: $oblivion-100
+
+    .label
+      color: $oblivion-300
+
+    .icon
+      padding-left: 0
+      padding-right: 8px
+      color: $oblivion-500
+
+  .note-title
+    margin-bottom: $space-xs
+
+  .note-date
+    margin-bottom: $space-m
+
+  .note-body
+    margin-bottom: $space-xxxl
+
+    p:not(small)
+      @extend .emphasis
+      @extend .text-tertiary-dark
+      margin-bottom: $space-xs
+
+    p:not(:last-of-type)
+      margin-bottom: $space-m
+
+    a
+      text-decoration: underline
+
+      &:hover
+        color: $thunderstorm-500
+
+    h2
+      @extend .heading-2
+      @extend .text-secondary-dark
+      margin-top: $space-xl
+      margin-bottom: $space-xxxs
+
+    h3
+      @extend .heading-3
+      @extend .text-secondary-dark
+      margin-top: $space-xl
+      margin-bottom: $space-xxxxs
+
+    figure
+      margin-bottom: $space-xl
+      @extend .text-quaternary-dark
+    
+    img
+      max-width: 100%
+      margin-bottom: $space-xs
+      border-radius: 4px
+      border: 4px solid $oblivion-1100
+      outline: 2px solid $oblivion-700
+
+    ficaption
+      caption-side: bottom-outside
+      display: table-caption
+
+  .note-end
+    display: flex
+    flex-direction: column
+
+    text-align: center
+
+    &-img
+      margin-bottom: 16px
+      height: 80px
+      width: 128px
+      align-self: center
+
+      background-size: 128px 80px
+      background-repeat: no-repeat
+      background-position: center center
+      background-image: url("../../static/images/note-end.svg")
+
+    &-title
+      margin-bottom: 16px
+
+    &-desc a
+      @extend .bold
+      @extend .text-secondary-dark
+      text-decoration: underline

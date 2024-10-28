@@ -1,0 +1,137 @@
+.notes-page .notes
+  // Inital spacing + navbar height
+  margin-top: calc(#{$space-xxl} + 96px)
+  margin-bottom: calc(#{$space-xxxl} - #{$space-l})
+
+  +adapt($bkp-desktop-hd)
+    margin-top: calc(#{$space-xxxl} + 96px)
+    margin-bottom: calc(#{$space-xxxxl} - #{$space-xl})
+
+  .container
+    @extend .gridSystem
+
+  .notes-intro, .notes-list
+
+    +adapt($bkp-tablet)
+      grid-column: 1 / span 5
+
+    +adapt($bkp-desktop-sd)
+      grid-column: 2 / span 4
+
+    +adapt($bkp-desktop-hd)
+      grid-column: 4 / span 6
+
+  .notes-intro
+    margin-bottom: $space-l
+
+    +adapt($bkp-desktop-sd)
+      margin-bottom: $space-xxl
+
+    &-title
+      margin-bottom: $space-xs
+
+  .note
+    position: relative
+    // Inital margin - body padding
+    // Only one note at the moment, uncomment when publishing the second article
+    // padding-left: calc(#{$space-xl} - #{$space-s})
+    padding-bottom: $space-l
+
+    &:first-of-type .note-title::before
+      top: 50%
+      height: calc(50% + 8px)
+
+    &:last-of-type
+
+      .note-title::before
+        height: 50%
+
+      .note-date::before
+        height: 0
+
+    +adapt($bkp-mobile)
+      padding-left: $space-m
+
+    +adapt($bkp-tablet)
+      // Only one note at the moment, uncomment when publishing the second article:
+      padding-left: $space-l
+
+  .note-title
+    margin-bottom: $space-xxxs
+    position: relative
+    // Only one note at the moment, pass this property to hover when publishing the second article:
+
+    &:hover
+      cursor: pointer
+      text-decoration: underline
+
+      .icon
+        opacity: 1
+        transform: translateX(0)
+
+    // Only one note at the moment, uncomment when publishing the second article
+    &::before, &::after
+      content: ''
+      position: absolute
+
+    &::before
+      top: 0
+      // Inital margin - circle diameter - stroke-width
+      left: calc(-#{$space-s} - 8px - 1px)
+      // Total height + margin-bottom
+      height: calc(100% + 8px)
+      width: 2px
+      z-index: -5
+
+      background-color: $oblivion-700
+
+    &::after
+      height: 16px
+      width: 16px
+      top: calc(50% + 2px)
+      left: calc((#{$space-xl} - #{$space-s}) * -1)
+      box-sizing: border-box
+
+      border-radius: 8px
+      border: 2px solid $oblivion-700
+      background-color: $oblivion-1100
+
+      transform: translateY(-50%)
+
+    +adapt($bkp-desktop-sd)
+
+      &::before
+        left: calc(-#{$space-m} - 8px - 1px)
+
+      &::after
+        left: calc(#{$space-l} * -1)
+
+  .icon
+    padding-left: 8px
+
+    color: $thunderstorm-500
+
+    opacity: 0
+    transform: translateX(-8px)
+    +motion($time-quick, $weight-small, $speed-standard, transform, opacity)
+
+  .note-date
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      // Inital margin - circle diameter - stroke-width
+      left: calc(-#{$space-s} - 8px - 1px)
+      // Total height + margin-bottom
+      height: calc(100% + #{$space-l})
+      width: 2px
+      z-index: -5
+
+      background-color: $oblivion-700
+
+    +adapt($bkp-desktop-sd)
+
+      &::before
+        left: calc(-#{$space-m} - 8px - 1px)

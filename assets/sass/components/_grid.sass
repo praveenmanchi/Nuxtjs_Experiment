@@ -1,0 +1,33 @@
+body
+  margin: 0 auto
+  max-width: 100vw
+  overflow-x: hidden
+
+  padding-left: 16px
+  padding-right: 16px
+
+  +adapt($bkp-mobile)
+    padding-left: 24px
+    padding-right: 24px
+
+  +adapt($bkp-tablet)
+    padding-left: 68px
+    padding-right: 68px
+
+  +adapt($bkp-desktop-sd)
+    padding-left: 76px
+    padding-right: 76px
+
+  +adapt($bkp-desktop-hd)
+    padding-left: calc(min(76px, 116px))
+    padding-right: calc(min(76px, 116px))
+
+.gridSystem
+
+  // Grid used for tablets and standard-definition desktops
+  +adapt($bkp-tablet)
+    +gCols(6, 1fr, 40px)
+
+  // Grid used for high-definition desktops
+  +adapt($bkp-desktop-hd)
+    +gCols(12, 1fr, 40px)

@@ -1,0 +1,1278 @@
+.about-page
+  // Inital spacing + navbar height
+  margin-top: calc(#{$space-s} + 96px)
+
+  +adapt($bkp-tablet)
+    margin-top: calc(#{$space-xl} + 96px)
+
+  .moodboard
+
+    .container
+      margin-bottom: $space-l
+      height: 512px
+      box-sizing: border-box
+      position: relative
+
+      outline: 2px solid $oblivion-700
+      outline-offset: -1px
+
+      +adapt($bkp-tablet)
+        margin-bottom: $space-xxl
+        height: 624px
+
+      +adapt($bkp-desktop-sd)
+        height: 568px
+
+      +adapt($bkp-desktop-hd)
+        height: 664px
+
+    .vertical-lines
+      height: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+
+      .line
+        position: absolute
+        height: 100%
+        left: 50%
+
+        border-left: 1px solid $oblivion-700
+        border-right: 1px solid $oblivion-700
+        transform: translateX(-50%)
+        transform-origin: center bottom
+
+        &:nth-of-type(1)
+          display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            width: calc(1080px - 2px)
+
+        &:nth-of-type(2)
+          display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            width: calc(1000px - 2px)
+
+        &:nth-of-type(3)
+          display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            width: calc(872px - 2px)
+
+        &:nth-of-type(4)
+          display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            width: calc(792px - 2px)
+
+        &:nth-of-type(5)
+          display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            width: calc(664px - 2px)
+
+        &:nth-of-type(6)
+          display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            width: calc(584px - 2px)
+
+        &:nth-of-type(7)
+          display: none
+
+          +adapt($bkp-tablet)
+            display: block
+            width: calc(184px - 2px)
+
+          +adapt($bkp-desktop-sd)
+            width: calc(648px - 2px)
+
+          +adapt($bkp-desktop-hd)
+            width: calc(456px - 2px)
+
+        &:nth-of-type(8)
+          display: none
+
+          +adapt($bkp-tablet)
+            display: block
+            width: calc(40px - 2px)
+
+          +adapt($bkp-desktop-sd)
+            width: calc(568px - 2px)
+
+          +adapt($bkp-desktop-hd)
+            width: calc(376px - 2px)
+
+        &:nth-of-type(9)
+          width: calc(100% - 48px * 3 - 2px)
+
+          +adapt($bkp-tablet)
+            width: calc(264px - 2px)
+
+          +adapt($bkp-desktop-sd)
+            width: calc(344px - 2px)
+
+          +adapt($bkp-desktop-hd)
+            width: calc(248px - 2px)
+
+        &:nth-of-type(10)
+          width: calc(100% - 48px * 2 - 2px)
+
+          +adapt($bkp-tablet)
+            width: calc(408px - 2px)
+
+          +adapt($bkp-desktop-sd)
+            width: calc(264px - 2px)
+
+          +adapt($bkp-desktop-hd)
+            width: calc(168px - 2px)
+
+        &:nth-of-type(11)
+          width: calc(100% - 48px - 2px)
+
+          +adapt($bkp-tablet)
+            width: calc(488px - 2px)
+
+          +adapt($bkp-desktop-sd)
+            width: calc(40px - 2px)
+
+    .horizontal-lines
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+
+      .line
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: $oblivion-700
+
+        &:nth-of-type(1)
+          display: none
+          top: 624px
+
+          +adapt($bkp-desktop-hd)
+            display: block
+
+        &:nth-of-type(2)
+          display: none
+          top: 560px
+
+          +adapt($bkp-tablet)
+            display: block
+
+          +adapt($bkp-desktop-sd)
+            display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+
+        &:nth-of-type(3)
+          display: none
+
+          +adapt($bkp-tablet)
+            display: block
+            top: 560px
+
+          +adapt($bkp-desktop-sd)
+            display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            top: 520px
+
+        &:nth-of-type(4)
+          display: none
+          top: 456px
+
+          +adapt($bkp-tablet)
+            display: block
+            top: 520px
+
+          +adapt($bkp-desktop-sd)
+            display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            top: 456px
+
+        &:nth-of-type(5)
+          display: none
+          top: 416px
+
+          +adapt($bkp-tablet)
+            display: block
+            top: 448px
+
+          +adapt($bkp-desktop-sd)
+            display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            top: 416px
+
+        &:nth-of-type(6)
+          display: none
+          top: 352px
+
+          +adapt($bkp-tablet)
+            display: block
+            top: 408px
+
+          +adapt($bkp-desktop-sd)
+            display: none
+
+          +adapt($bkp-desktop-hd)
+            display: block
+            top: 352px
+
+        &:nth-of-type(7)
+          top: 488px
+
+          +adapt($bkp-tablet)
+            top: 336px
+
+          +adapt($bkp-desktop-sd)
+            top: 456px
+
+          +adapt($bkp-desktop-hd)
+            top: 312px
+
+        &:nth-of-type(8)
+          top: 464px
+
+          +adapt($bkp-tablet)
+            top: 296px
+
+          +adapt($bkp-desktop-sd)
+            top: 416px
+
+          +adapt($bkp-desktop-hd)
+            top: 248px
+
+        &:nth-of-type(9)
+          top: 440px
+
+          +adapt($bkp-tablet)
+            top: 224px
+
+          +adapt($bkp-desktop-sd)
+            top: 304px
+
+          +adapt($bkp-desktop-hd)
+            top: 208px
+
+        &:nth-of-type(10)
+          top: 72px
+
+          +adapt($bkp-tablet)
+            top: 184px
+
+          +adapt($bkp-desktop-sd)
+            top: 264px
+
+          +adapt($bkp-desktop-hd)
+            top: 144px
+
+        &:nth-of-type(11)
+          top: 48px
+
+          +adapt($bkp-tablet)
+            top: 112px
+
+          +adapt($bkp-desktop-sd)
+            top: 152px
+
+          +adapt($bkp-desktop-hd)
+            top: 104px
+
+        &:nth-of-type(12)
+          top: 24px
+
+          +adapt($bkp-tablet)
+            top: 72px
+
+          +adapt($bkp-desktop-sd)
+            top: 112px
+
+          +adapt($bkp-desktop-hd)
+            top: 40px
+
+    .atlas, .logo, .electricity-toolkit, .gt-america, .bluu-suuperstar
+      background-repeat: no-repeat
+      background-position: center center
+      transform-origin: top center
+
+    // .atlas::after, .logo::after, .gt-america::after, .bluu-suuperstar::after, .pinned-top::before, .pinned-top::after, .pinned-bottom::before, .pinned-bottom::after
+    //   content: ''
+    //   position: absolute
+    //   height: 8px
+    //   width: 8px
+    //
+    //   border-radius: 8px
+    //
+    // .atlas::after, .logo::after, .gt-america::after, .bluu-suuperstar::after
+    //   top: -5px
+    //   left: 50%
+    //   transform: translateX(-50%)
+
+    .poster.active
+
+      .skeleton
+        animation: poster 480ms $speed-emphasized forwards
+
+        &::before, &::after
+          transform: scaleX(1)
+          transition-delay: 480ms
+
+    .skeleton
+      position: absolute
+      top: 0
+      left: 0
+      height: 2px
+      width: 100%
+
+      border: 2px solid $oblivion-500
+      border-bottom: none
+      transform-origin: center top
+      transform: scale3d(0, 1, 1)
+
+      &::before, &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        height: 2px
+        width: 100%
+
+        background-color: $oblivion-500
+        transform: scale3d(0, 1, 1)
+        transition: 480ms transform $speed-emphasized
+
+      &::before
+        left: 0
+        transform-origin: left center
+
+      &::after
+        right: 0
+        transform-origin: right center
+
+    .fill
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+
+      transform-origin: center top
+
+    .image
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+
+      z-index: 50
+
+    .atlas
+      position: absolute
+      top: 112px
+      left: 44%
+      height: 312px
+      width: 208px
+
+      transform: rotate3d(0, 0, 1, -7.5deg) translate3d(-50%, 0, 0)
+
+      +adapt($bkp-tablet)
+        top: 110px
+        left: 28px
+        transform: rotate3d(0, 0, 1, -7.5deg)
+
+      +adapt($bkp-desktop-sd)
+        top: 144px
+
+      +adapt($bkp-desktop-hd)
+        left: 65px
+
+      .fill
+        background-color: $thunderstorm-500
+
+      .image
+        background-color: $thunderstorm-900
+        mask-image: url("@/static/images/atlas.svg")
+        mask-size: 312px 312px
+        background-size: 312px 208px
+        background-position: left top
+
+    .logo
+      position: absolute
+      top: 28px
+      left: 56%
+      height: 144px
+      width: 144px
+
+      transform: rotate3d(0, 0, 1, -15deg) translate3d(-50%, 0, 0)
+
+      .fill
+        background-color: #ffffff
+
+      .image
+        background-image: url("@/static/images/logo.svg")
+        background-size: 144px 144px
+
+      // &::after
+      //   background-color: $oblivion-300
+      //   border: 1px solid $oblivion-700
+
+      +adapt($bkp-tablet)
+        top: 69px
+        left: 100px
+        transform: rotate3d(0, 0, 1, -15deg)
+
+      +adapt($bkp-desktop-sd)
+        top: 102px
+        left: 135px
+        transform: rotate3d(0, 0, 1, -15deg)
+
+      +adapt($bkp-desktop-hd)
+        top: 101px
+        left: 136px
+
+    .electricity-toolkit
+      display: none
+      position: absolute
+      top: 40px
+      right: 65px
+      height: 208px
+      width: 416px
+
+      +adapt($bkp-desktop-hd)
+        display: block
+
+      .fill
+        border: 1px solid $oblivion-500
+        background-color: $oblivion-1100
+
+      .image
+        background-image: url("@/static/images/electricity-toolkit.svg")
+        background-size: 416px 208px
+
+      .pinned-top, .pinned-bottom
+        width: 100%
+        height: 100%
+        position: absolute
+
+      .pinned-top::before, .pinned-top::after, .pinned-bottom::before, .pinned-bottom::after
+        background-color: $oblivion-500
+        border: 1px solid $oblivion-900
+
+      .pinned-top::before
+        top: -5px
+        left: -5px
+
+      .pinned-top::after
+        top: -5px
+        right: -5px
+
+      .pinned-bottom::before
+        bottom: -5px
+        left: -5px
+
+      .pinned-bottom::after
+        bottom: -5px
+        right: -5px
+
+    .bluu-suuperstar
+      display: none
+      position: absolute
+      height: 208px
+      width: 208px
+
+      transform: rotate3d(0, 0, 1, 7.5deg)
+
+      .fill
+        background-color: $firework-500
+
+      .image
+        background-image: url("@/static/images/bluu-suuperstar.svg")
+        background-size: 208px 208px
+
+      // &::after
+      //   background-color: $firework-500
+      //   border: 1px solid $firework-900
+
+      +adapt($bkp-tablet)
+        display: block
+        top: 183px
+        right: 50px
+
+      +adapt($bkp-desktop-sd)
+        top: 112px
+        right: 178px
+
+      +adapt($bkp-desktop-hd)
+        top: 311px
+        right: 206px
+
+    .gt-america
+      display: none
+      position: absolute
+      height: 208px
+      width: 208px
+
+      transform: rotate3d(0, 0, 1, -7.5deg)
+
+      .fill
+        background-color: $maelstrom-500
+
+      .image
+        background-image: url("@/static/images/gt-america.svg")
+        background-size: 208px 208px
+
+      // &::after
+      //   background-color: $maelstrom-500
+      //   border: 1px solid $maelstrom-900
+
+      +adapt($bkp-tablet)
+        display: block
+        top: 335px
+        right: -5px
+
+      +adapt($bkp-desktop-sd)
+        top: 262px
+        right: 34px
+
+      +adapt($bkp-desktop-hd)
+        top: 350px
+        right: 102px
+
+  .discover
+    margin-bottom: $space-xxxl
+
+    +adapt($bkp-tablet)
+      margin-bottom: $space-xxxxl
+
+    .container
+      @extend .gridSystem
+
+    &-title
+      margin-bottom: $space-xxl
+
+      +adapt($bkp-tablet)
+        grid-column: span 6
+
+      +adapt($bkp-desktop-hd)
+        grid-column: span 12
+
+    &-blocs
+      @extend .gridSystem
+
+      +adapt($bkp-tablet)
+        grid-column: span 6
+
+      +adapt($bkp-desktop-hd)
+        grid-column: span 12
+
+    &-bloc
+      @extend .gridSystem
+      grid-column: span 6
+
+      +adapt($bkp-desktop-hd)
+        grid-template-columns: none
+        column-gap: 0
+        grid-column: span 4
+
+      &:not(:last-of-type)
+        margin-bottom: $space-xxxl
+
+        +adapt($bkp-tablet)
+          margin-bottom: $space-xl
+
+        +adapt($bkp-desktop-hd)
+          margin-bottom: 0
+
+      .illustration
+        margin-bottom: $space-xs
+        height: 80px
+        width: 128px
+
+        background-size: 128px 80px
+        background-repeat: no-repeat
+        background-position: center center
+
+        +adapt($bkp-tablet)
+          margin: 0 auto
+          margin-top: 20px
+          margin-bottom: $space-s
+          grid-column: 1 / span 2
+
+        +adapt($bkp-desktop-hd)
+          margin: 0
+          margin-bottom: $space-s
+          grid-column: none
+
+      &.story .illustration
+        background-image: url("@/static/images/discover-story.svg")
+
+      &.electricity .illustration
+        background-image: url("@/static/images/discover-electricity.svg")
+
+      &.mood .illustration
+        background-image: url("@/static/images/discover-moodboard.svg")
+
+      &-content
+
+        +adapt($bkp-tablet)
+          grid-column: 3 / span 4
+
+        +adapt($bkp-desktop-sd)
+          grid-column: 3 / span 3
+
+        +adapt($bkp-desktop-hd)
+          grid-column: none
+
+      .title
+        margin-bottom: $space-xxs
+
+      .desc
+        margin-bottom: $space-xxs
+
+  .resume
+    margin-bottom: $space-xxl
+
+    .container
+      @extend .gridSystem
+      align-items: flex-start
+
+    // GSAP fix
+    .pin-spacer
+      grid-column: span 7
+
+    .promise
+
+      +adapt($bkp-tablet)
+        grid-column: 1 / span 6
+
+      +adapt($bkp-desktop-sd)
+        grid-column: 1 / span 5
+
+      +adapt($bkp-desktop-hd)
+        grid-column: span 7
+
+      .caption
+        margin-bottom: $space-xs
+        color: $thunderstorm-500
+
+      .title
+        margin-bottom: $space-s
+
+      .desc
+        margin-bottom: $space-l
+
+        +adapt($bkp-desktop-sd)
+          padding-right: 152px
+
+        +adapt($bkp-desktop-hd)
+          padding-right: 104px
+
+        p:first-of-type
+          margin-bottom: 32px
+
+        .drake
+          text-decoration: line-through
+
+      .ctas
+        display: flex
+        flex-direction: column-reverse
+
+        +adapt($bkp-tablet)
+          flex-direction: row
+
+        .process
+
+          +adapt($bkp-tablet)
+            margin-right: $space-s
+
+        .contact
+          margin-bottom: $space-s
+          background-color: $maelstrom-500
+
+          +adapt($bkp-tablet)
+            margin-bottom: 0
+
+    .experiences
+      margin-top: calc(#{$space-xl - 8px})
+
+      +adapt($bkp-tablet)
+        grid-column: 1 / span 6
+
+      +adapt($bkp-desktop-sd)
+        grid-column: 1 / span 4
+
+      +adapt($bkp-desktop-hd)
+        grid-column: 9 / span 4
+
+      .experience
+        position: relative
+        margin-left: 48px
+        padding-bottom: $space-l
+
+        +adapt($bkp-desktop-hd)
+          margin-left: 0
+
+        &:nth-child(1) .position::before
+          height: 0
+
+        &:nth-child(4)
+
+          &::before
+            height: 0
+
+          .desc
+            padding: 0
+
+        &::before
+          content: ''
+          position: absolute
+          top: 26px
+          left: calc(-#{$space-m} - 9px)
+          height: calc(100% - 26px)
+          width: 2px
+          z-index: -5
+
+          background-color: $oblivion-700
+
+        .position
+          margin-bottom: $space-xxxxs
+          position: relative
+
+          &::before, &::after
+            content: ''
+            position: absolute
+
+          &::before
+            top: 0
+            left: calc(-#{$space-m} - 9px)
+            height: 26px
+            width: 2px
+            z-index: -5
+
+            background-color: $oblivion-700
+
+          &::after
+            height: 16px
+            width: 16px
+            top: calc(26px - 2px)
+            left: calc((#{$space-s} + #{$space-s}) * -1)
+            box-sizing: border-box
+
+            border-radius: 8px
+            border: 2px solid $oblivion-700
+            background-color: $oblivion-1100
+
+        .duration
+          margin-bottom: $space-xxs
+
+        .desc
+
+          p:not(:last-of-type)
+            margin-bottom: $space-xs
+
+        .link
+          margin-top: $space-xs
+
+      .numbers
+        margin-top: $space-xl
+        border: 2px solid $oblivion-700
+        border-radius: 8px
+
+        .clients, .projects
+          padding: $space-xs $space-l $space-m $space-l
+
+          +adapt($bkp-desktop-hd)
+            padding: $space-xs $space-m $space-m $space-m
+
+          .number
+            display: flex
+            flex-direction: row
+            align-items: flex-end
+
+            // Override defaut font resizing
+            font-size: 95px
+            line-height: 116px
+            letter-spacing: -2px
+
+          .desc
+
+            p ~ p
+              margin-top: $space-xs
+
+        .clients
+          border-bottom: 2px solid $oblivion-700
+
+          .desc
+            margin-bottom: $space-xxxs
+
+            p ~ p
+              margin-top: $space-xs
+
+        .projects
+          margin-bottom: 0
+
+          .number .icon
+            margin-left: $space-xxs
+            color: $thunderstorm-500
+
+            transform: translateY(-48px)
+
+  .personal
+    padding-top: $space-l
+    padding-bottom: $space-xxl
+    position: relative
+    max-width: 100vw
+
+    background-color: #ffffff
+
+    +adapt($bkp-tablet)
+      padding-top: $space-xl
+      padding-bottom: $space-xxxl
+
+    +adapt($bkp-desktop-sd)
+      padding-top: $space-xxl
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      background-color: #ffffff
+      width: 116px
+      height: 100%
+      top: 0
+      z-index: -5
+
+    &:before
+      left: -116px
+
+    &:after
+      right: -116px
+
+    .container
+      @extend .gridSystem
+
+    &-photo
+      display: none
+      grid-column: span 5
+      transform: translateY(-$space-xxs)
+
+      +adapt($bkp-desktop-hd)
+        display: block
+
+      img
+        max-width: 100%
+        border-radius: 8px
+
+    &-content
+
+      +adapt($bkp-tablet)
+        grid-column: 1 / span 6
+
+      +adapt($bkp-desktop-sd)
+        grid-column: 1 / span 5
+
+      +adapt($bkp-desktop-hd)
+        grid-column: 7 / span 6
+
+      .caption
+        margin-bottom: $space-xxxs
+
+      .quote
+        margin-bottom: $space-m
+
+        font-size: 31px
+        line-height: 40px
+        letter-spacing: -1px
+
+      p:not(:first-of-type)
+        margin-top: $space-m
+
+      a
+        margin-top: $space-xxxxs
+
+        &:not(:last-of-type)
+          margin-bottom: $space-xs
+
+  .facts
+    margin-top: $space-xxxxl
+
+    +adapt($bkp-tablet)
+      grid-column: span 6
+
+    +adapt($bkp-desktop-hd)
+      grid-column: span 12
+
+    .facts-intro
+      margin-bottom: 40px
+      padding-bottom: 32px
+
+      border-bottom: 2px solid $oblivion-050
+
+      .title
+        margin-bottom: 8px
+
+      .desc-action
+        display: flex
+        flex-direction: column
+
+        +adapt($bkp-desktop-sd)
+          flex-direction: row
+          align-items: flex-start
+          justify-content: space-between
+
+      .desc
+        width: 100%
+        margin-bottom: 24px
+
+        +adapt($bkp-desktop-sd)
+          margin-bottom: 0
+          width: 60%
+
+        +adapt($bkp-desktop-hd)
+          width: calc(50% - 20px)
+
+      .button
+        flex-grow: 2
+
+        +adapt($bkp-desktop-sd)
+          flex-grow: 0
+
+    .facts-wrapper
+      @extend .gridSystem
+      align-items: flex-start
+
+    .column
+
+      &:not(:first-child)
+        display: none
+
+      +adapt($bkp-tablet)
+        grid-column: span 3
+
+        &:not(:first-child)
+          display: block
+
+        &:last-child
+          display: none
+
+      +adapt($bkp-desktop-hd)
+        grid-column: span 4
+
+        &:last-child
+          display: block
+
+    .fact
+      width: 100%
+      margin-bottom: 40px
+
+  .thanks
+    position: relative
+
+    background-color: $oblivion-050
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      background-color: $oblivion-050
+      width: 116px
+      height: 100%
+      top: 0
+
+    &:before
+      left: -116px
+
+    &:after
+      right: -116px
+
+    .container
+      padding: $space-l 0
+      @extend .gridSystem
+      align-items: flex-start
+
+      +adapt($bkp-tablet)
+        padding: $space-xl 0 $space-xxl
+
+    .thanks-bloc
+      @extend .gridSystem
+
+      &:not(:last-of-type)
+        margin-bottom: $space-l
+
+      +adapt($bkp-tablet)
+        grid-column: span 6
+
+        &:not(:last-of-type)
+          margin-bottom: $space-xl
+
+      +adapt($bkp-desktop-hd)
+        grid-template-columns: none
+        column-gap: 0
+        grid-column: span 4
+
+        &:not(:last-of-type)
+          margin-bottom: 0
+
+    .caption
+      margin-bottom: 7px
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      color: $oblivion-1100
+
+      +adapt($bkp-tablet)
+        grid-column: 1 / span 2
+        transform: translateY(4px)
+
+      +adapt($bkp-desktop-hd)
+        grid-column: none
+        transform: translateY(0)
+
+      .icon
+        padding-right: 4px
+        color: $maelstrom-500
+
+    .content
+
+      +adapt($bkp-tablet)
+        grid-column: 3 / span 4
+
+      +adapt($bkp-desktop-sd)
+        grid-column: 3 / span 3
+
+      +adapt($bkp-desktop-hd)
+        grid-column: none
+
+      p:not(:last-of-type)
+        margin-bottom: 20px
+
+      a
+        @extend .bold
+        color: $oblivion-1100
+        text-decoration: underline
+
+        &:hover
+          color: $maelstrom-500
+
+        &:active
+          color: $maelstrom-500
+
+@keyframes poster
+  0%
+    height: 2px
+    transform: scale3d(0, 1, 1)
+
+  50%
+    height: 2px
+    transform: scale3d(1, 1, 1)
+
+  100%
+    height: 100%
+    transform: scale3d(1, 1, 1)
+
+#moodboard
+  // Inital spacing + navbar height
+  margin-top: calc(#{$space-xxl} + 96px)
+  margin-bottom: calc(#{$space-xxxl} - #{$space-l})
+
+  +adapt($bkp-desktop-hd)
+    margin-top: calc(#{$space-xxxl} + 96px)
+    margin-bottom: calc(#{$space-xxxxl} - #{$space-xl})
+
+  .container
+    @extend .gridSystem
+
+  .playground-instructions
+    @extend .gridSystem
+    grid-column: span 12
+    align-items: end
+
+    +adapt($bkp-desktop-sd)
+
+  .playground-intro
+    margin-bottom: $space-m
+
+    +adapt($bkp-tablet)
+      grid-column: span 4
+
+    +adapt($bkp-desktop-sd)
+      margin-bottom: 0
+      grid-column: span 3
+
+    +adapt($bkp-desktop-hd)
+      grid-column: span 6
+
+    .title
+      margin-bottom: $space-xs
+
+  .playground-actions
+    display: flex
+    flex-direction: column-reverse
+    flex-grow: 2
+    justify-content: flex-end
+    gap: 16px
+
+    +adapt($bkp-tablet)
+      grid-column: span 6
+
+    +adapt($bkp-desktop-sd)
+      grid-column: span 3
+      margin-bottom: 2px
+      flex-direction: row
+      flex-grow: 1
+
+    +adapt($bkp-desktop-hd)
+      grid-column: span 6
+
+  .playground-commands
+    margin-top: 32px
+    margin-bottom: 32px
+    padding-top: $space-xs
+    padding-bottom: $space-xs
+    display: flex
+    gap: 32px
+
+    border-top: 2px solid $oblivion-700
+    border-bottom: 2px solid $oblivion-700
+
+    +adapt($bkp-tablet)
+      grid-column: span 6
+
+    +adapt($bkp-desktop-hd)
+      grid-column: 1 / span 12
+
+    .command
+      display: flex
+      align-items: center
+
+      &.move .icon
+        color: $maelstrom-500
+
+      &.scale .icon
+        color: $thunderstorm-500
+
+      &.resize .icon
+        color: $firework-500
+
+      .icon
+        padding-right: 8px
+
+      span
+        padding-left: 8px
+
+  .playground
+    position: relative
+    height: 1440px
+    wdith: 100%
+    grid-column: 1 / span 12
+    overflow: hidden
+
+    outline: 2px solid $oblivion-700
+    outline-offset: -1px
+
+  .inspiration
+    position: absolute
+    display: block
+    top: 24px
+    left: 24px
+    width: 200px
+    z-index: 0
+
+    +adapt($bkp-desktop-sd)
+      width: 312px
+
+    perspective: 1000
+    -webkit-transform-style: preserve-3d
+    -webkit-backface-visibility: hidden
+    -moz-backface-visibility: hidden
+    -ms-backface-visibility: hidden
+    
+    // will-change: transform
+    // transition: transform 100ms
+    user-select: none
+
+    img
+      max-width: 100%
+      vertical-align: middle
+      outline: 8px solid $oblivion-1100
+      outline-offset: -8px
+      user-select: none
+
+    &:hover
+      cursor: move
+
+      &::before, .anchor
+        outline: 2px solid $oblivion-200
+
+    &.is-moving
+
+      &::before, .anchor
+        outline: 2px solid $maelstrom-500
+
+    &.is-scaling
+
+      &::before, .anchor
+        outline: 2px solid $thunderstorm-500
+
+    &.is-rotating
+
+      &::before, .anchor
+        outline: 2px solid $firework-500
+
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      height: calc(100% - 2px)
+      width: calc(100% - 2px)
+
+      outline: 2px solid $oblivion-300
+      transform: translate(-50%, -50%)
+
+    .anchor
+      position: absolute
+      height: 4px
+      width: 4px
+
+      background-color: $oblivion-1100
+      outline: 2px solid $oblivion-300
+
+      &.ne
+        top: -2px
+        right: -2px
+        // cursor: ne-resize
+
+      &.nw
+        top: -2px
+        left: -2px
+        // cursor: nw-resize
+
+      &.se
+        bottom: -2px
+        right: -2px
+        // cursor: se-resize
+
+      &.sw
+        bottom: -2px
+        left: -2px
+        // cursor: sw-resize

@@ -1,0 +1,143 @@
+// FIXING WEB BROWSERS FONT WEIGHT RENDERS
+body
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+// DISPLAY TITLES
+.display-1
+  padding-top: 4px
+  font-family: "bluu-suuperstar-black"
+  letter-spacing: -2px
+
+  +adapt($bkp-mobile)
+    font-size: 72px
+    line-height: 96px
+
+  +adapt($bkp-tablet)
+    font-size: 136px
+    line-height: 144px
+
+  +adapt($bkp-desktop-sd)
+    font-size: 183px
+    line-height: 200px
+
+.display-2
+  padding-top: 1px
+  padding-bottom: 3px
+
+  font-family: bluu-suuperstar-black
+
+  +adapt($bkp-mobile)
+    font-size: 40px
+    line-height: 52px
+    letter-spacing: -1px
+
+  +adapt($bkp-tablet)
+    font-size: 64px
+    line-height: 80px
+    letter-spacing: -2px
+
+  +adapt($bkp-desktop-hd)
+    font-size: 95px
+    line-height: 116px
+
+.display-3
+  padding-top: 1px
+  padding-bottom: 3px
+
+  font-family: gt-america-expanded-black
+  font-size: 48px
+  line-height: 64px
+  text-transform: uppercase
+
+// HEADINGS
+.heading-1
+  padding-top: 1px
+  padding-bottom: 3px
+
+  font-family: bluu-suuperstar-black
+  font-size: 40px
+  line-height: 52px
+  letter-spacing: -1px
+
+  +adapt($bkp-tablet)
+    font-size: 48px
+    line-height: 60px
+
+.heading-2
+  font-family: bluu-suuperstar-black
+  font-size: 24px
+  line-height: 32px
+  letter-spacing: -1px
+
+  +adapt($bkp-tablet)
+    padding-top: 1px
+    padding-bottom: 3px
+
+    font-size: 31px
+    line-height: 40px
+
+.heading-3
+  padding-top: 3px
+  padding-bottom: 1px
+
+  font-family: bluu-suuperstar-black
+  font-size: 20px
+  line-height: 28px
+  letter-spacing: 0
+
+// COPY
+.emphasis
+  font-family: gt-america-light
+  font-size: 20px
+  line-height: 32px
+
+  &, & > p
+    padding-top: 2px
+    padding-bottom: 2px
+
+.body
+  font-family: gt-america-light
+  font-size: 16px
+  line-height: 24px
+
+  &, & > p, a
+    padding-top: 2px
+    padding-bottom: 2px
+
+.body-long
+  font-family: gt-america-light
+  font-size: 16px
+  line-height: 28px
+
+.bold
+  font-family: gt-america-medium
+
+.label
+  padding-top: 2px
+  padding-bottom: 2px
+
+  font-family: gt-america-mono-medium
+  font-size: 16px
+  line-height: 24px
+  letter-spacing: 1px
+  text-transform: uppercase
+
+.caption
+  padding-top: 1px
+  padding-bottom: 3px
+
+  font-family: gt-america-mono-medium
+  font-size: 13px
+  line-height: 20px
+  letter-spacing: 1px
+  text-transform: uppercase
+
+.secret
+  font-family: gt-america-mono-medium
+  font-size: 10px
+  line-height: 16px
+  letter-spacing: 0.5px
+  text-transform: uppercase

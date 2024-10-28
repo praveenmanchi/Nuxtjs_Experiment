@@ -1,0 +1,66 @@
+.link
+  display: inline-flex
+  align-items: center
+  justify-content: center
+
+  *::selection
+    background: transparent
+
+  span
+    @extend .bold
+    text-decoration: underline
+    +motion($time-standard, $weight-small, $speed-standard, color)
+
+  .icon
+    transform: translateY(2px)
+
+  &:hover
+    cursor: pointer
+
+  &.emphasis
+    padding: 4px 0 8px
+
+    .icon
+      margin-left: 8px
+
+  &.body
+
+    .icon
+      margin-left: 8px
+
+  &.dark
+
+    span
+      color: #ffffff
+
+    .icon
+      color: $thunderstorm-500
+
+    &:hover span
+      color: $thunderstorm-500
+
+    &:active span
+      color: $thunderstorm-600
+
+  &.light
+
+    span
+      color: #000000
+
+    .icon
+      color: $maelstrom-500
+
+    &:hover span
+      color: $maelstrom-600
+
+    &:active span
+      color: $maelstrom-700
+
+  &.info
+
+    span
+      color: #ffffff
+
+    .icon
+      margin-left: 4px
+      color: $maelstrom-100

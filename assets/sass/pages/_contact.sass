@@ -1,0 +1,154 @@
+.contact-page .contact
+  // Inital spacing + navbar height
+  margin-top: calc(#{$space-xxl} + 96px)
+
+  .container
+    @extend .gridSystem
+    align-items: flex-start
+
+  .contact-content
+    margin-bottom: $space-l
+
+    +adapt($bkp-desktop-hd)
+      margin-bottom: $space-xxxl
+
+  .contact-content, .contact-links, .redirects
+
+    +adapt($bkp-tablet)
+      grid-column: 1 / span 6
+
+  .contact-heading
+    margin-bottom: $space-s
+
+    // span
+    //   display: block
+    //   margin-top: $space-m
+
+  .contact-desc
+    margin-bottom: $space-m
+
+  .contact-starters li
+    list-style-type: none
+    list-style-position: inside
+    padding-left: 24px
+    position: relative
+
+    &::before
+      content: '—'
+      position: absolute
+      text-indent: -24px
+
+  .contact-links
+    margin-bottom: $space-xxl
+    border: 2px solid $oblivion-700
+    border-radius: 8px
+
+    transform: translateY(8px)
+
+    +adapt($bkp-desktop-sd)
+      display: flex
+      flex-direction: row
+
+    +adapt($bkp-desktop-hd)
+      display: block
+      grid-column: 9 / span 4
+
+  .contact-link
+    padding: $space-s $space-m
+    padding-bottom: 20px
+
+    +adapt($bkp-desktop-sd)
+      flex-grow: 2
+
+    &:first-of-type
+      border-bottom: 2px solid $oblivion-700
+
+      +adapt($bkp-desktop-sd)
+        border-bottom: none
+        border-right: 2px solid $oblivion-700
+
+      +adapt($bkp-desktop-hd)
+        border-right: none
+        border-bottom: 2px solid $oblivion-700
+
+  .redirects
+    @extend .gridSystem
+    padding: $space-xl 0 $space-xxl
+    border-top: 2px solid $oblivion-700
+
+    +adapt($bkp-desktop-hd)
+      grid-column: span 12
+
+  .redirect
+    @extend .gridSystem
+    grid-column: span 6
+
+    +adapt($bkp-desktop-hd)
+      grid-template-columns: none
+      grid-column: span 4
+      column-gap: 0
+
+    &:not(:last-of-type)
+      margin-bottom: $space-xxxl
+
+      +adapt($bkp-tablet)
+        margin-bottom: $space-xl
+
+      +adapt($bkp-desktop-hd)
+        margin-bottom: 0
+
+    &-icon
+      height: 80px
+      width: 128px
+      margin: 0 auto
+      margin-bottom: $space-s
+
+      background-size: 128px 80px
+      background-repeat: no-repeat
+      background-position: center center
+
+      +adapt($bkp-tablet)
+        margin: 0 auto
+        margin-top: 20px
+        margin-bottom: $space-s
+        grid-column: 1 / span 2
+
+      +adapt($bkp-desktop-hd)
+        margin: 0
+        margin-bottom: $space-s
+        grid-column: none
+
+    &-content
+      text-align: center
+
+      +adapt($bkp-tablet)
+        text-align: left
+        grid-column: 3 / span 4
+
+      +adapt($bkp-desktop-sd)
+        grid-column: 3 / span 3
+
+      +adapt($bkp-desktop-hd)
+        grid-column: none
+
+    &-title
+      margin-bottom: $space-xxxs
+
+    &-desc
+      margin-bottom: $space-xs
+
+    &.about .redirect-icon
+      background-image: url("../../static/images/redirect-about.svg")
+
+    &.notes .redirect-icon
+      background-image: url("../../static/images/redirect-notes.svg")
+
+    &.process .redirect-icon
+      background-image: url("../../static/images/redirect-process.svg")
+
+    .redirect-link .icon
+      height: 12px
+      width: 12px
+      padding-left: $space-xxxxs
+
+      color: $thunderstorm-500
