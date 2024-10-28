@@ -1,20 +1,8 @@
-import pkg from './package'
-import dotenv from "dotenv";
-
-dotenv.config()
-
-const contentful = require("contentful");
-const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE,
-  accessToken: process.env.CONTENTFUL_ACCESSTOKEN
-})
-
 export default {
   target: 'static',
+  
+  modern: true,
 
-  /*
-  ** Headers of the page
-  */
   head: {
     htmlAttrs: {
       lang: 'en'
@@ -59,38 +47,32 @@ export default {
       },
     ],
     script: [
-      { src: 'https://unpkg.com/splitting/dist/splitting.min.js' }
+      { 
+        src: 'https://unpkg.com/splitting/dist/splitting.min.js',
+        defer: true
+      }
     ]
   },
 
-  /*
-  ** Global CSS
-  */
   css: [
     { src: '@/assets/sass/app.sass', lang: 'sass' }
   ],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
     { src: '~plugins/vue-gtag.js', mode: 'client' },
     { src: '~/plugins/vee-validate.js' },
-    { src: '~/plugins/contentful.js' },
-    { src: '~/plugins/posts.js' },
-    { src: '~/plugins/clipboard.js' }
+    { src: '~/plugins/clipboard.js', mode: 'client' }
   ],
 
-  env: {
-    CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
-    CONTENTFUL_ACCESSTOKEN: process.env.CONTENTFUL_ACCESSTOKEN,
-    CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT
-  },
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/markdownit',
+    '@nuxtjs/sitemap'
+  ],
 
-  /*
-  ** Nuxt.js modules
-  */
-  modules: ['@nuxtjs/axios', '@nuxtjs/markdownit', '@nuxtjs/sitemap'],
+  buildModules: [
+    '@nuxtjs/style-resources'
+  ],
 
   sitemap: {
     hostname: 'https://yannglt.com',
@@ -105,38 +87,36 @@ export default {
   },
 
   markdownit: {
-    injected: true
+    injected: true,
+    breaks: true,
+    html: true
   },
 
   generate: {
     dir: '.output/public',
-    routes() {
-      return Promise.all([
-        client.getEntries({
-          content_type: "note"
-        })
-      ]).then(([noteEntries]) => {
-        return [...noteEntries.items.map(entry => `/notes/${entry.fields.slug}`)];
-      });
-    }
+    fallback: '404.html'
   },
 
-  /*
-  ** Run this to be able to inspect on mobile
-  */
-  // server: {
-  //   port: 3000, // default: 3000
-  //   host: '0.0.0.0',
-  // },
-
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    transpile: ['vee-validate/dist/rules', 'vue-clipboard2', 'gsap'],
-    extend(config, ctx) { }
-  },
+    transpile: [
+      'vee-validate/dist/rules',
+      'vue-clipboard2',
+      'gsap'
+    ],
+    optimization: {
+      splitChunks: {
+        chunks: 'all'
+      }
+    },
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-methods', { loose: true }]
+      ]
+    },
+    extend(config, ctx) {
+      if (ctx.isDev) {
+        config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+      }
+    }
+  }
 }
