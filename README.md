@@ -1,8 +1,21 @@
-# yannglt.com
 
-> My riveting Nuxt.js project
+# Nuxt.js project
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6cc692f2-e459-49ba-b1b1-7e44a58bace6/deploy-status)](https://app.netlify.com/sites/supersayann-preprod/deploys)
+The codebase uses several front-end technologies, as indicated in the provided code snippets:
+1. Nuxt.js: A framework for creating Vue.js applications, used for server-side rendering and static site generation.
+,
+2. Vue.js: The core JavaScript framework used for building the user interface.
+"
+GSAP (GreenSock Animation Platform): A JavaScript library for creating animations.
+,
+4. Vee-Validate: A form validation library for Vue.js.
+,
+5. Vue-Clipboard2: A Vue.js plugin for clipboard operations.
+"
+6. Sass: A CSS preprocessor used for styling.
+,
+These technologies are used in various parts of the codebase to build and style the application, manage animations, and handle form validations.y riveting Nuxt.js project
+
 
 ## Build Setup
 
