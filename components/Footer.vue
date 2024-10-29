@@ -39,14 +39,14 @@
       <div class="footer-links">
         <div class="footer-copyright">
           <p class="footer-copyrightTitle">Praveen Manchi</p>
-          <p class="footer-copyrightDesc">All rights reserved</p>
+          <p class="footer-copyrightDesc">The rights reservation for this project is currently pending</p>
           <div class="footer-copyrightLogo"></div>
         </div>
         <div class="footer-explore">
           <p class="footer-exploreTitle">In this space</p>
           <ul class="footer-exploreLinks">
-            <!-- <li><a href="/works">Discover my work</a></li>
-            <li><a href="/process">Learn about my process</a></li> -->
+            <li><a href="/works">Discover my work</a></li>
+            <li><a href="/process">Learn about my process</a></li>
             <li><nuxt-link to="/about" class="body">Know more about me</nuxt-link></li>
             <li><nuxt-link to="/notes" class="body">Read my notes</nuxt-link></li>
             <li><nuxt-link to="/contact" class="body">Get in touch</nuxt-link></li>
