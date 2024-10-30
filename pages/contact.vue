@@ -19,7 +19,9 @@
         <div class="contact-links">
           <div class="contact-link">
             <p class="link-purpose caption text-quaternary-dark">Discussions</p>
-            <SuperLink href="https://twitter.com/yannglt" target="_blank" variant="emphasis dark" icon="#arrow-forward-20">Shoot me a DM on Twitter</SuperLink>
+            <p class="contact-desc emphasis text-tertiary-dark">Does it resonate with you? Let’s have a discussion or even launch some rockets and/or products together! Here are some conversation starters if, like me, you never know how to start:</p>
+
+            <SuperButton class="human-intro-link" href="/about" variant="tertiary thunderstorm" icon="#arrow-forward-20">Read more about me</SuperButton>
           </div>
           <div class="contact-link">
             <p class="link-purpose caption text-quaternary-dark">Work inquieries</p>
@@ -88,12 +90,12 @@
           {
             hid: 'og:image',
             name: 'og:image',
-            content: 'https://yannglt.com/images/og-image.png',
+            content: 'https://ycsfwdainpwgmgsjqppv.supabase.co/storage/v1/object/public/OG-images/home-og.png',
           },
           {
             hid: 'twitter:image',
             name: 'twitter:image',
-            content: 'https://yannglt.com/images/og-image.png',
+            content: 'https://ycsfwdainpwgmgsjqppv.supabase.co/storage/v1/object/public/OG-images/home-og.png',
           },
           {
             hid: 'og:url',

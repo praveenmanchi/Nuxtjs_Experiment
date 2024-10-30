@@ -69,12 +69,12 @@
           {
             hid: 'og:image',
             name: 'og:image',
-            content: 'https://yannglt.com/images/og-image.png',
+            content: 'https://ycsfwdainpwgmgsjqppv.supabase.co/storage/v1/object/public/OG-images/home-og.png',
           },
           {
             hid: 'twitter:image',
             name: 'twitter:image',
-            content: 'https://yannglt.com/images/og-image.png',
+            content: 'https://ycsfwdainpwgmgsjqppv.supabase.co/storage/v1/object/public/OG-images/home-og.png',
           },
           {
             hid: 'og:url',
