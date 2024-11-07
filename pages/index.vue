@@ -32,16 +32,16 @@
             </div>
             <div class="etiquette-property">
               <p class="name caption">Current position</p>
-              <p class="value heading-3 text-primary-light">Product Designer, Specify</p>
+              <p class="value heading-3 text-primary-light">Product Designer, Deloitte</p>
             </div>
-            <div class="etiquette-property">
+            <!-- <div class="etiquette-property">
               <p class="name caption">Focus</p>
               <p class="value heading-3 text-primary-light">Design Operations</p>
-            </div>
-            <div class="etiquette-property">
+            </div> -->
+            <!-- <div class="etiquette-property">
               <p class="name caption">Location</p>
               <p class="value heading-3 text-primary-light">Paris, France</p>
-            </div>
+            </div> -->
           </div>
           <div class="logo"></div>
           <p class="subtitle display-3 text-primary-light">danger</p>
@@ -143,12 +143,16 @@
           <!-- <h2 class="human-intro-title heading-1 text-primary-dark">What about the human behind all of this?</h2> -->
           <SuperButton class="human-intro-link" href="/about" variant="tertiary thunderstorm" icon="#arrow-forward-20">Read more about me</SuperButton>
           <!-- <div class="human-intro-logo"></div> -->
+           
         </div>
         <!-- <div class="facts">
           <Fact v-for="fact in facts" :key="fact.id" variant="dark" :sub="fact.sub" :title="fact.title" :desc="fact.desc"></Fact>
         </div> -->
+        
       </div>
+      
     </section>
+    
 
     <section class="portfolio-request">
       <div class="container">
