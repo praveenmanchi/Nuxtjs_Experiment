@@ -62,7 +62,7 @@
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://yannglt.com/notes/' + this.note.fields.slug,
+            content: 'https://praveenmanchi.art/notes/' + this.note.fields.slug,
           },
         ]
       }

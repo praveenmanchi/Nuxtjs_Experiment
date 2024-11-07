@@ -79,7 +79,7 @@
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://yannglt.com/moodboard/',
+            content: 'https://praveenmanchi.art/moodboard/',
           },
         ]
       }

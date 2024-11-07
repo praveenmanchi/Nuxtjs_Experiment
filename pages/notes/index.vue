@@ -53,7 +53,7 @@
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://yannglt.com/notes/',
+            content: 'https://praveenmanchi.art/notes/',
           },
         ]
       }

@@ -100,7 +100,7 @@
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://yannglt.com/contact/',
+            content: 'https://praveenmanchi.art/contact/',
           },
         ]
       }

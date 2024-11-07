@@ -300,7 +300,7 @@
           {
             hid: 'og:url',
             name: 'og:url',
-            content: 'https://yannglt.com/about/',
+            content: 'https://praveenmanchi.art/about/',
           },
         ]
       }
