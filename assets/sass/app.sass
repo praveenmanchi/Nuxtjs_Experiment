@@ -727,7 +727,12 @@
     margin-left: 0
 
     +adapt($bkp-desktop-sd)
-      max-width: 584px
+      max-width: 100%
+
+  .aligning-items
+    display: flex
+    flex-direction: column
+    align-items: center
 
   .title
     margin-bottom: $space-xxxs
@@ -1092,7 +1097,7 @@
 
 .human
   margin-top: $space-xxl
-  margin-bottom: 672px
+  margin-bottom: 40px
 
   +adapt($bkp-desktop-hd)
     margin-top: $space-xxxl
