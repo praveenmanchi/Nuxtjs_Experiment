@@ -8,12 +8,11 @@
       <!-- Logo Section -->
       <div class="index">
         <NuxtLink to="/" class="index-link">
-          <div class="index-logo">PM</div>
-          <div class="index-me">
-            <p class="index-name">PRAVEEN MANCHI</p>
-            <p class="index-subtitle">PERSONAL SPACE</p>
+          <div class="index-logo">
+            <img src="@/static/icons/logo-thunderstorm-96.svg" alt="Logo" class="logo-image">
           </div>
-        </NuxtLink>
+          
+        </NuxtLink> 
       </div>
 
       <!-- Mobile Menu Button -->
