@@ -1,0 +1,27 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6121_25465)">
+<g clip-path="url(#clip1_6121_25465)">
+<g clip-path="url(#clip2_6121_25465)">
+<mask id="mask0_6121_25465" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="19" height="20">
+<path d="M2 2H21V22H2V2Z" fill="white" style="fill:white;fill-opacity:1;"/>
+</mask>
+<g mask="url(#mask0_6121_25465)">
+<path opacity="0.2" d="M2.00006 13.4119L2.04806 6.14092C2.05606 4.82392 2.95806 3.69592 4.20306 3.44392L11.0831 2.05192C12.7361 1.71792 14.2701 3.03792 14.2591 4.78492L14.2121 12.0579C14.2021 13.3739 13.3011 14.5019 12.0561 14.7539L5.17606 16.1459C3.52306 16.4799 1.98906 15.1599 2.00006 13.4119Z" fill="#F8FAFC" style="fill:#F8FAFC;fill:color(display-p3 0.9724 0.9787 0.9876);fill-opacity:1;"/>
+<path opacity="0.5" d="M5.37109 16.3133L5.42009 9.03931C5.42709 7.72431 6.33009 6.59631 7.57509 6.34431L14.4551 4.95231C16.1081 4.61831 17.6421 5.93831 17.6311 7.68631L17.5831 14.9583C17.5751 16.2743 16.6731 17.4023 15.4281 17.6543L8.54809 19.0463C6.89509 19.3803 5.36109 18.0603 5.37209 16.3133H5.37109Z" fill="#F8FAFC" style="fill:#F8FAFC;fill:color(display-p3 0.9724 0.9787 0.9876);fill-opacity:1;"/>
+<path opacity="0.8" d="M8.73884 19.213L8.78584 11.941C8.79484 10.624 9.69584 9.49696 10.9418 9.24496L17.8218 7.85296C19.4738 7.51796 21.0088 8.83896 20.9968 10.586L20.9498 17.859C20.9418 19.175 20.0398 20.303 18.7948 20.555L11.9148 21.947C10.2618 22.281 8.72784 20.961 8.73784 19.213H8.73884Z" fill="#F8FAFC" style="fill:#F8FAFC;fill:color(display-p3 0.9724 0.9787 0.9876);fill-opacity:1;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_6121_25465">
+<rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
+</clipPath>
+<clipPath id="clip1_6121_25465">
+<rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
+</clipPath>
+<clipPath id="clip2_6121_25465">
+<rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
+</clipPath>
+</defs>
+</svg>

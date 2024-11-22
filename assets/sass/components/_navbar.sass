@@ -4,7 +4,7 @@
   top: 0
   left: 50%
   position: fixed
-  z-index: 404
+  z-index: 404  // Keep high z-index for navbar
   transform: translate3d(-50%, 0, 0)
   transition: transform $time-standard $speed-emphasized
   background: $oblivion-1100
@@ -15,8 +15,9 @@
 
 // Navbar Content
 .navbar-content
+  height: 64px  
   margin: 0 $space-s
-  padding: $space-s
+  padding: $space-s 0
   max-width: $bkp-desktop-hd
   position: relative
   display: flex
@@ -136,9 +137,10 @@
 // Case Studies Dropdown
 .case-studies-dropdown
   position: fixed
-  top: 64px
+  top: 64px  // Height of navbar
   left: 0
   right: 0
+  z-index: 403  // One less than navbar
   background: $oblivion-1100
   opacity: 0
   visibility: hidden
@@ -158,6 +160,7 @@
     max-width: $bkp-desktop-hd
     margin: 0 auto
     padding: $space-xl 0
+     position: relative
 
     +adapt($bkp-tablet)
       padding: $space-xl 68px

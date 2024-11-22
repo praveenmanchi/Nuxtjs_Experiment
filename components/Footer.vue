@@ -39,7 +39,11 @@
       <div class="footer-links">
         <div class="footer-copyright">
           <p class="footer-copyrightTitle">Praveen Manchi</p>
-          <p class="footer-copyrightDesc">The rights reservation for this project is currently pending</p>
+          <p class="footer-copyrightDesc">The rights reservation for this project is currently pending.The rights reservation for this project is currently pending
+
+The rights reservation for this project is currently pending
+
+</p>
           <div class="footer-copyrightLogo"></div>
         </div>
         <div class="footer-explore">
