@@ -5,6 +5,7 @@
     'navbar-hidden': !showNavbar
   }">
     <div class="navbar-content">
+      <!-- Logo Section -->
       <div class="index">
         <NuxtLink to="/" class="index-link">
           <div class="index-logo">PM</div>
@@ -14,16 +15,32 @@
           </div>
         </NuxtLink>
       </div>
-      <div class="links">
+
+      <!-- Mobile Menu Button -->
+      <button 
+        class="mobile-menu-button"
+        @click="isMobileMenuOpen = !isMobileMenuOpen"
+        aria-label="Toggle menu"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- Navigation -->
+      <div class="links" :class="{ 'is-open': isMobileMenuOpen }">
         <ul>
-          <li><NuxtLink to="/about">ABOUT</NuxtLink></li>
+          <li><NuxtLink to="/about" @click="closeMobileMenu">ABOUT</NuxtLink></li>
           <li>
             <div 
               class="case-studies-wrapper"
               @mouseenter="handleCaseStudiesEnter"
               @mouseleave="handleCaseStudiesLeave"
             >
-              <NuxtLink to="/case-studies">CASE STUDIES</NuxtLink>
+              <NuxtLink to="/case-studies">
+                CASE STUDIES
+                <span class="mobile-arrow" :class="{ 'is-open': showMobileSubmenu }">→</span>
+              </NuxtLink>
               
               <div 
                 class="case-studies-dropdown"
@@ -31,6 +48,7 @@
               >
                 <div class="container">
                   <div class="dropdown-layout">
+                    <!-- Left Column -->
                     <div class="dropdown-left">
                       <h2>CASE STUDIES</h2>
                       <div class="quick-links">
@@ -48,6 +66,8 @@
                         <span class="icon">→</span>
                       </NuxtLink>
                     </div>
+
+                    <!-- Right Column -->
                     <div class="dropdown-right">
                       <h3>RECENT CASE STUDIES</h3>
                       <div class="recent-studies">
@@ -78,8 +98,8 @@
               </div>
             </div>
           </li>
-          <li><NuxtLink to="/contact">CONTACT</NuxtLink></li>
-          <li><NuxtLink to="/moodboard">MOODBOARD</NuxtLink></li>
+          <li><NuxtLink to="/contact" @click="closeMobileMenu">CONTACT</NuxtLink></li>
+          <li><NuxtLink to="/moodboard" @click="closeMobileMenu">MOODBOARD</NuxtLink></li>
         </ul>
       </div>
     </div>
@@ -95,6 +115,8 @@ export default {
       homeAnimationDone: false,
       lastScrollPosition: 0,
       showCaseStudies: false,
+      isMobileMenuOpen: false,
+      showMobileSubmenu: false,
       dropdownTimeout: null,
       quickLinks: [
         { title: 'DESIGN SYSTEMS', path: '/case-studies/design-systems' },
@@ -136,6 +158,7 @@ export default {
 
   mounted() {
     window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('resize', this.handleResize)
     setTimeout(() => {
       this.homeAnimationDone = true
     }, 1000)
@@ -143,6 +166,7 @@ export default {
 
   beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('resize', this.handleResize)
     if (this.dropdownTimeout) {
       clearTimeout(this.dropdownTimeout)
     }
@@ -158,16 +182,37 @@ export default {
     },
 
     handleCaseStudiesEnter() {
-      if (this.dropdownTimeout) {
-        clearTimeout(this.dropdownTimeout)
+      if (window.innerWidth > 768) {
+        if (this.dropdownTimeout) {
+          clearTimeout(this.dropdownTimeout)
+        }
+        this.showCaseStudies = true
       }
-      this.showCaseStudies = true
     },
 
     handleCaseStudiesLeave() {
-      this.dropdownTimeout = setTimeout(() => {
-        this.showCaseStudies = false
-      }, 100)
+      if (window.innerWidth > 768) {
+        this.dropdownTimeout = setTimeout(() => {
+          this.showCaseStudies = false
+        }, 100)
+      }
+    },
+
+    toggleMobileSubmenu() {
+      if (window.innerWidth <= 768) {
+        this.showMobileSubmenu = !this.showMobileSubmenu
+      }
+    },
+
+    closeMobileMenu() {
+      this.isMobileMenuOpen = false
+      this.showMobileSubmenu = false
+    },
+
+    handleResize() {
+      if (window.innerWidth > 768) {
+        this.closeMobileMenu()
+      }
     }
   }
 }
