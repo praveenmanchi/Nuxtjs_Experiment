@@ -36,7 +36,7 @@
               @mouseenter="handleCaseStudiesEnter"
               @mouseleave="handleCaseStudiesLeave"
             >
-              <NuxtLink to="/case-studies">
+              <NuxtLink to="#">
                 CASE STUDIES
                 <span class="mobile-arrow" :class="{ 'is-open': showMobileSubmenu }">→</span>
               </NuxtLink>
@@ -60,7 +60,7 @@
                           {{ link.title }}
                         </NuxtLink>
                       </div>
-                      <NuxtLink to="/case-studies" class="view-all">
+                      <NuxtLink to="/notes" class="view-all">
                         VIEW ALL CASE STUDIES
                         <span class="icon">→</span>
                       </NuxtLink>
@@ -98,7 +98,8 @@
             </div>
           </li>
           <li><NuxtLink to="/contact" @click="closeMobileMenu">CONTACT</NuxtLink></li>
-          <li><NuxtLink to="/moodboard" @click="closeMobileMenu">MOODBOARD</NuxtLink></li>
+          <li><NuxtLink to="/about/moodboard" @click="closeMobileMenu">MOODBOARD</NuxtLink></li>
+          <li><NuxtLink to="/blog" @click="closeMobileMenu">BlOG</NuxtLink></li>
         </ul>
       </div>
     </div>

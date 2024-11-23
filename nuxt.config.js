@@ -91,8 +91,9 @@ export default {
       '/',
       '/about',
       '/about/moodboard',
-      'notes',
-      'contact'
+      '/notes',
+      '/contact',
+      '/blog'
     ]
   },
 
@@ -162,6 +163,18 @@ export default {
         return false
       })
     }
+  },
+
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+  },
+
+  styleResources: {
+    sass: [
+      '@/assets/sass/base/_variables.sass',
+      '@/assets/sass/base/_mixins.sass'
+    ]
   },
 
   // Added for better performance

@@ -1,0 +1,102 @@
+// assets/sass/pages/_blog.sass
+
+.blog-page .blog
+  // Initial spacing + navbar height
+  margin-top: calc(#{$space-xxl} + 96px)
+  margin-bottom: calc(#{$space-xxxl} - #{$space-l})
+
+  +adapt($bkp-desktop-hd)
+    margin-top: calc(#{$space-xxxl} + 96px)
+    margin-bottom: calc(#{$space-xxxxl} - #{$space-xl})
+
+  .container
+    @extend .gridSystem
+
+  .blog-intro, .blog-list
+    +adapt($bkp-tablet)
+      grid-column: 1 / span 5
+
+    +adapt($bkp-desktop-sd)
+      grid-column: 2 / span 4
+
+    +adapt($bkp-desktop-hd)
+      grid-column: 4 / span 6
+
+  .blog-intro
+    margin-bottom: $space-l
+
+    +adapt($bkp-desktop-sd)
+      margin-bottom: $space-xxl
+
+    &-title
+      margin-bottom: $space-xs
+
+  .blog-item
+    position: relative
+    padding-left: $space-l
+    padding-bottom: $space-l
+
+    &:first-of-type .blog-title::before
+      top: 50%
+      height: calc(50% + 8px)
+
+    &:last-of-type
+      .blog-title::before
+        height: 50%
+
+      .blog-date::before
+        height: 0
+
+  .blog-title
+    margin-bottom: $space-xxxs
+    position: relative
+
+    a
+      display: flex
+      align-items: center
+      gap: $space-xs
+
+      &:hover
+        text-decoration: underline
+
+        .icon
+          transform: translateX(4px)
+
+    .icon
+      transition: transform 0.2s ease
+
+    &::before, &::after
+      content: ''
+      position: absolute
+
+    &::before
+      top: 0
+      left: calc(-#{$space-s} - 8px - 1px)
+      height: calc(100% + 8px)
+      width: 2px
+      z-index: -5
+      background-color: $oblivion-700
+
+    &::after
+      height: 16px
+      width: 16px
+      top: calc(50% + 2px)
+      left: calc(-#{$space-s} - 8px - 1px)
+      box-sizing: border-box
+      border-radius: 8px
+      border: 2px solid $oblivion-700
+      background-color: $oblivion-1100
+      transform: translateY(-50%)
+
+  .blog-date
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: calc(-#{$space-s} - 8px - 1px)
+      height: calc(100% + #{$space-l})
+      width: 2px
+      z-index: -5
+      background-color: $oblivion-700

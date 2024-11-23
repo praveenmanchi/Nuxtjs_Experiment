@@ -80,27 +80,35 @@
           &:hover
             color: $oblivion-025
 
-  .footer-social
-    margin-top: 40px
+  // Update the social icons section in _footer.sass
 
-    &Title
-      font-size: 14px
-      font-weight: 500
-      margin-bottom: 20px
-      color: #F8FAFC
+.footer-social
+  margin-top: 40px
 
-    &Icons
-      display: flex
-      gap: 16px
+  &Title
+    font-size: 14px
+    font-weight: 500
+    margin-bottom: 20px
+    color: $oblivion-025
 
-      .social-icon
-        width: 20px
-        height: 20px
-        color: $oblivion-300
-        transition: color 0.2s ease
+  &Icons
+    display: flex
+    gap: 16px
 
-        &:hover
-          color: #F8FAFC
+    .social-icon
+      width: 20px
+      height: 20px
+      color: $oblivion-025  // Changed to light color
+      transition: all 0.2s ease
+
+      svg
+        width: 100%
+        height: 100%
+        fill: currentColor
+
+      &:hover
+        color: $thunderstorm-500  // Optional: add hover effect
+        transform: translateY(-1px)  // Optional: slight lift effect on hover
 
   .footer-bottom
     display: flex

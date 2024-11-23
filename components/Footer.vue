@@ -26,25 +26,35 @@
             <li><a href="https://dribbble.com/yannglt" target="_blank">WIPs on Dribbble</a></li>
           </ul>
           <div class="footer-social">
-            <p class="footer-socialTitle">OTHER INTERNET SAPCE</p>
-            <div class="footer-socialIcons">
-              <a href="#" target="_blank" class="social-icon">
-                <svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/figma.svg"></use></svg>
-              </a>
-              <a href="#" target="_blank" class="social-icon">
-                <svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/Github.svg"></use></svg>
-              </a>
-              <a href="#" target="_blank" class="social-icon">
-                <svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/layers.svg"></use></svg>
-              </a>
-              <a href="#" target="_blank" class="social-icon">
-                <svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/readme.svg"></use></svg>
-              </a>
-              <a href="#" target="_blank" class="social-icon">
-                <svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/twitter.svg"></use></svg>
-              </a>
-            </div>
-          </div>
+      <p class="footer-socialTitle">OTHER INTERNET SAPCE</p>
+      <div class="footer-socialIcons">
+        <a href="#" target="_blank" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <use xlink:href="@/static/icons/figma.svg#icon"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <use xlink:href="@/static/icons/Github.svg#icon"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <use xlink:href="@/static/icons/layers.svg#icon"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <use xlink:href="@/static/icons/readme.svg#icon"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <use xlink:href="@/static/icons/twitter.svg#icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
         </div>
       </div>
       <div class="footer-bottom" style="display: flex; flex-direction: row; justify-content: space-between; border: 0px">
