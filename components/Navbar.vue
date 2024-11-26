@@ -61,14 +61,18 @@
                         </NuxtLink>
                       </div>
                       <NuxtLink to="/notes" class="view-all">
-                        VIEW ALL CASE STUDIES
+                        All CASE STUDIES
+                        <span class="icon">→</span>
+                      </NuxtLink>
+                      <NuxtLink to="/nda" class="view-all">
+                        NDA UX/UI WORK
                         <span class="icon">→</span>
                       </NuxtLink>
                     </div>
 
                     <!-- Right Column -->
                     <div class="dropdown-right">
-                      <h3>RECENT CASE STUDIES</h3>
+                      <h3>RECENTlY COMPELETED CASE STUDIES</h3>
                       <div class="recent-studies">
                         <div 
                           v-for="study in recentStudies" 
