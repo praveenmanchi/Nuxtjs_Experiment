@@ -91,7 +91,7 @@
           <div class="emphasis">
             <p>My name is Praveen Manchi. I am a User Interface and User Experience designer.</p>
             <p>I currently work at Deloitte, where I am part of an amazing team that is designing thoughtful experiences to help designers, product managers, and engineers collaborate better together. In my spare time, I am learning Unreal Engine to create virtual and augmented reality experiences for the future. I am passionate about building and designing delightful experiences that consider the needs of both the business and the end user. My goal is to make customers and users satisfied when they use our products and services online.</p>
-            <SuperLink href="https://github.com/yannglt/yannglt.com" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Read the code behind this website</SuperLink>
+            <SuperLink href="https://github.com/yannglt/praveenmanchi.art" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Read the code behind this website</SuperLink>
             <!-- <p>When my hands are not on my mechanical keyboard, I enjoy taking care of my plants, cook/ try some italian recipes with my girlfriend and building LEGO sets.</p>
             <p>To relax, I dive into work of others designers and developers, thanks to Standards Manual, Increment and Offscreen.</p> -->
             <!-- <p>With this COVID—19/20/21 crisis + global lockdown, I spent a lot of time improving my workspace and discovered myself quite a passion for that (how original). Interested in learning more about my setup ?</p>

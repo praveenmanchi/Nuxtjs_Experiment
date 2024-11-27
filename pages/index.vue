@@ -206,7 +206,7 @@
     //     ],
     //     showNavbar: true,
     //     lastScrollPosition: 0,
-    //     email: 'hello@yannglt.com',
+    //     email: 'hello@praveenmanchi.art',
     //     emailToast: null
     //   }
     // },

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: http://yannglt.com/sitemap.xml
+Sitemap: http://praveenmanchi.art/sitemap.xml
