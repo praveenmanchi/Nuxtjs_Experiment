@@ -68,7 +68,7 @@
 
     data: function () {
       return {
-        email: 'hello@yannglt.com',
+        email: 'hello@praveenmanchi.art',
         emailToast: null
       }
     },
