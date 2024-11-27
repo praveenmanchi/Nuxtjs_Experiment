@@ -85,7 +85,7 @@ export default {
   ],
 
   sitemap: {
-    hostname: 'https://yannglt.com',
+    hostname: 'https://praveenmanchi.art',
     gzip: true,
     routes: [
       '/',
