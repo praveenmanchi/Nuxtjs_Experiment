@@ -195,5 +195,8 @@ export default {
 
   publicRuntimeConfig: {
     validKey: process.env.NUXT_PUBLIC_VALID_KEY
+  },
+  router: {
+    middleware: ['nda-auth']
   }
 }
