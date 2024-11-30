@@ -191,5 +191,9 @@ export default {
   server: {
     port: process.env.PORT || 3000,
     host: '0.0.0.0'
+  },
+
+  publicRuntimeConfig: {
+    validKey: process.env.NUXT_PUBLIC_VALID_KEY
   }
 }

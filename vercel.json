@@ -38,6 +38,7 @@
       }
     ],
     "env": {
-      "NODE_ENV": "production"
+      "NODE_ENV": "production",
+      "NUXT_PUBLIC_VALID_KEY": "cmwxN3N5QP8FzgYj6rhCvwH8hX5utvyRVU"
     }
   }
