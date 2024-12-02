@@ -1,6 +1,6 @@
 <template>
     <div class="moodboard">
-      <section class="moodboard-playground" style="background-image: url('@/static/icons/background.svg'); background-size: cover; background-position: center;">
+      <section class="moodboard-playground">
         <div class="content-wrapper">
           <div class="container">
             <!-- Disclaimer Section -->
@@ -80,7 +80,7 @@
   <script>
   // Script remains unchanged
   import SuperButton from '@/components/SuperButton.vue'
-  
+  import background from '@/static/icons/background.svg'
   export default {
     name: 'NDAValidation',
     
@@ -131,10 +131,11 @@
   // Layout
   .moodboard-playground
     width: 100%
-    min-height: 100vh
+    // min-height: 170vh
     display: flex
     justify-content: center
     align-items: center
+
   
   .content-wrapper
     width: 100%
@@ -148,7 +149,7 @@
     align-items: center
     text-align: center
     margin: 0 auto
-    max-width: 800px
+    // max-width: 800px
   
   // Playground Instructions
   .playground-commands
