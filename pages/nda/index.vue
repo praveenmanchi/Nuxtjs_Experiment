@@ -55,16 +55,21 @@
                   type="text" 
                   placeholder="Enter super key"
                   class="super-key-input"
-                  @keyup.enter="validateKey"
+                  v-on:keydown="validateKey()"
+                  v-on:keyup="validateKey()"
+                  v-on:change="validateKey()"
+                 
                 >
-                <SuperButton 
+                <!-- <SuperButton 
                   @click="validateKey" 
                   class="validate-button" 
                   variant="primary dark"
                   :disabled="isLoading"
+                  
                 >
                   {{ isLoading ? 'Validating...' : 'Proceed' }}
-                </SuperButton>
+                </SuperButton> -->
+                
               </div>
               
               <p v-if="errorMessage" class="error-message text-center">
@@ -80,7 +85,7 @@
   <script>
   // Script remains unchanged
   import SuperButton from '@/components/SuperButton.vue'
-  import background from '@/static/icons/background.svg'
+
   export default {
     name: 'NDAValidation',
     
@@ -98,6 +103,7 @@
   
     methods: {
       async validateKey() {
+
         if (!this.superKey?.trim()) {
           this.errorMessage = 'Please enter an access code'
           return
@@ -107,7 +113,9 @@
           this.isLoading = true
           this.errorMessage = ''
           
-          const validKey = this.$config.validKey
+          // const validKey = this.$config.validKey
+          const validKey = 'MANCHI007'
+          console.log('validatekey',validKey,this.superKey);
           
           if (this.superKey === validKey) {
             localStorage.setItem('ndaValidated', 'true')
@@ -122,9 +130,10 @@
         } finally {
           this.isLoading = false
         }
-      }
+      },
     }
   }
+ 
   </script>
   
   <style lang="sass" scoped>
@@ -139,7 +148,7 @@
   
   .content-wrapper
     width: 100%
-    max-width: 1200px
+    max-width: 1325px
     margin: 0 auto
     padding: 6px // Reduced padding
   
@@ -148,7 +157,7 @@
     flex-direction: column
     align-items: center
     text-align: center
-    margin: 0 auto
+    // margin: 0 auto
     // max-width: 800px
   
   // Playground Instructions
@@ -183,11 +192,11 @@
     justify-content: center
   
   .super-key-input
-    min-width: 250px
+    min-width: 280px
     padding: 6px // Reduced padding
     border: 1px solid rgba(255, 255, 255, 0.1)
     border-radius: 4px
-    background: rgba(255, 255, 255, 0.05)
+    background: #020202
     color: #fff
     font-size: 16px
     text-align: center
