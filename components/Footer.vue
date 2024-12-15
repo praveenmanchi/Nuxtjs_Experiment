@@ -3,8 +3,15 @@
     <div class="container" style="display: flex; flex-direction: column">
       <div class="footer-links" style="display: flex; flex-direction: row; justify-content: space-between;">
         <div class="footer-copyright">
-          <p class="footer-copyrightTitle">PRAVEEN MANCHI</p>
-          <p class="footer-copyrightDesc">The rights reservation for this project is currently pending.</p>
+          <div class="index">
+          <NuxtLink to="/" class="index-link">
+          <div class="index-logo">
+          <img src="@/static/icons/logo-thunderstorm-96.svg" alt="Logo" class="logo-image">
+          </div>
+          </NuxtLink> 
+          </div>
+          <!-- <p class="footer-copyrightTitle">PRAVEEN MANCHI</p> -->
+          <p class="footer-copyrightDesc">The rights reservation for this project is currently pending.The rights reservation for this project is currently pending.</p>
           <!-- <div class="footer-copyrightLogo">
             <span>PM</span>
           </div> -->
@@ -12,11 +19,11 @@
         <div class="footer-explore">
           <p class="footer-exploreTitle">IN THIS SPACE</p>
           <ul class="footer-exploreLinks">
-            <li><nuxt-link to="/works">Discover my work</nuxt-link></li>
-            <li><nuxt-link to="/process">Learn about my process</nuxt-link></li>
-            <li><nuxt-link to="/about">Know more about me</nuxt-link></li>
-            <li><nuxt-link to="/notes">Read my notes</nuxt-link></li>
-            <li><nuxt-link to="/contact">Get in touch</nuxt-link></li>
+            <li><nuxt-link to="/works">Discover Casestudies</nuxt-link></li>
+            <li><nuxt-link to="/process">Know My Process</nuxt-link></li>
+            <li><nuxt-link to="/about">About Me</nuxt-link></li>
+            <li><nuxt-link to="/notes">Read My Blogs</nuxt-link></li>
+            <li><nuxt-link to="/contact">Contact</nuxt-link></li>
           </ul>
         </div>
         <div class="footer-follow">
@@ -58,7 +65,7 @@
         </div>
       </div>
       <div class="footer-bottom" style="display: flex; flex-direction: row; justify-content: space-between; border: 0px">
-        <p>© 2024 Praveen Manchi · <nuxt-link to="/changelog">Changelog</nuxt-link></p>
+        <p>© 2024 Praveen Manchi · <nuxt-link to="/changelog">Changelog</nuxt-link>· <nuxt-link to="/changelog">Site Status</nuxt-link></p>
         <div class="footer-colorbar"></div>
       </div>
     </div>

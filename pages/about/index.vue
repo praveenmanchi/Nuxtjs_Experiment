@@ -1,9 +1,6 @@
 <template lang="html">
   <div class="about-page">
     <div class="gsap-debug-screen"></div>
-
-    
-
     <section class="discover">
       <div class="container">
         <h1 class="discover-title display-2 text-primary-dark">Hope you enjoyed your travel in my personal space so far, here are some ways to learn more about me:</h1>
@@ -13,7 +10,7 @@
             <div class="discover-bloc-content">
               <p class="title heading-2 text-secondary-dark">Story</p>
               <p class="desc body text-quaternary-dark">Some time have passed between playing with my  first small bricks of color and becoming a Product Designer, I wanted to share anecdotes and funny stories you may find interesting.</p>
-              <SuperButton class="cta" variant="quaternary dark disabled">Coming soon</SuperButton>
+              <SuperButton href="/about/moodboard" class="cta" variant="quaternary dark" icon="#arrow-forward-12">Dive into my inspirations</SuperButton>
             </div>
           </div>
           <div class="discover-bloc electricity">
@@ -21,7 +18,7 @@
             <div class="discover-bloc-content">
               <p class="title heading-2 text-secondary-dark">Electricity</p>
               <p class="desc body text-quaternary-dark">Since my first portfolio on October 2016, I began building my universe around one thing that kept my attention since I was a child: cities and their energy, using the symbols of light in physics and flash.</p>
-              <SuperButton class="cta" variant="quaternary dark disabled">Coming soon</SuperButton>
+              <SuperButton href="/about/moodboard" class="cta" variant="quaternary dark" icon="#arrow-forward-12">Dive into my inspirations</SuperButton>
             </div>
           </div>
           <div class="discover-bloc mood">
@@ -47,7 +44,7 @@
             <p>Also, I always try to find a great balance between following the choosen methodology and keeping velocity and efficiency through the entire journey.</p>
           </div>
           <div class="ctas">
-            <SuperButton class="process" variant="secondary dark disabled">Discover my process (soon)</SuperButton>
+            <SuperButton href="/contact" class="contact" variant="primary dark" icon="#mail-20">Discover My Process</SuperButton>
             <SuperButton href="/contact" class="contact" variant="primary dark" icon="#mail-20">Contact me</SuperButton>
           </div>
         </div>
@@ -91,7 +88,6 @@
           <div class="emphasis">
             <p>My name is Praveen Manchi. I am a User Interface and User Experience designer.</p>
             <p>I currently work at Deloitte, where I am part of an amazing team that is designing thoughtful experiences to help designers, product managers, and engineers collaborate better together. In my spare time, I am learning Unreal Engine to create virtual and augmented reality experiences for the future. I am passionate about building and designing delightful experiences that consider the needs of both the business and the end user. My goal is to make customers and users satisfied when they use our products and services online.</p>
-            <SuperLink href="https://github.com/yannglt/praveenmanchi.art" target="_blank" variant="emphasis light" icon="#arrow-forward-20">Read the code behind this website</SuperLink>
             <!-- <p>When my hands are not on my mechanical keyboard, I enjoy taking care of my plants, cook/ try some italian recipes with my girlfriend and building LEGO sets.</p>
             <p>To relax, I dive into work of others designers and developers, thanks to Standards Manual, Increment and Offscreen.</p> -->
             <!-- <p>With this COVID—19/20/21 crisis + global lockdown, I spent a lot of time improving my workspace and discovered myself quite a passion for that (how original). Interested in learning more about my setup ?</p>
@@ -118,7 +114,7 @@
       </div>
     </section>
 
-    <section class="thanks">
+    <!-- <section class="thanks">
       <div class="container">
         <div class="thanks-bloc website">
           <div class="caption"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="@/static/icons/sprite.svg#entry-20"></use></svg>This website</div>
@@ -141,7 +137,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
